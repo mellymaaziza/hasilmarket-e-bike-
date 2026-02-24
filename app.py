@@ -686,7 +686,7 @@ else:
             market_demand = get_market_demand(df_filtered['Sold_Clean'].sum())
             
             m1.metric("Avg. Total Revenue", f"Rp {avg_revenue:,.0f}")
-            m2.metric("Avg. Sold / Product", f"{avg_sold:.2f} Pcs")
+            m2.metric("Avg. Sold / Product (Month)", f"{avg_sold:.2f} Pcs")
             m3.metric("Avg. Price", f"Rp {df_filtered['Harga_Clean'].mean():,.0f}")
             m4.metric("Market Demand\n(R&D Insight)", market_demand)
 
@@ -879,3 +879,4 @@ else:
 
 
     st.markdown("<br><hr><center style='color:white; opacity:0.5;'>Dashboard by R&D Departement Hub © 2026</center>", unsafe_allow_html=True)
+
